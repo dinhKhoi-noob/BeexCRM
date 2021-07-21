@@ -1,0 +1,377 @@
+.title{
+  width: 300px;
+  margin: auto;
+  margin-top: 20px;
+}
+.newstyle{
+  display: none;
+}
+.addcus{
+  width: 198px;
+  margin-left: 49em;
+  background-color: orange;
+  color: #f4f4f4;
+  border:  1px solid orange;
+  height: 35px;
+  text-decoration: none; 
+  border-radius: 20px;
+  padding: 5px 10px;
+  font-size: 30px;
+}
+.bodys {
+  display: flex;
+  justify-content: space-around;
+  font-size: 20px;
+  font-weight: 400;
+  margin: 30px 0;
+}
+.bodyss{
+  width: 250px;
+}
+.bodysss{
+  width: 250px;
+}
+.bodys a{
+  margin: 0 20px;
+  padding: 5px 10px;
+  text-decoration: none;
+  border-radius: 20px;
+}
+.bodys .Edit{
+  border: 1px solid #ff9900;
+  color: #ff9900;
+}
+.bodys .Delete{
+  border: 1px solid red;
+  color: red;
+}
+/* css infoproduct*/
+.container {
+  max-width: 800px;
+  font-size: 30px;
+  color: #333333;
+  margin: 50px auto auto auto;
+  margin-bottom: 50px;
+}
+.container h1{
+  font-size: 40px;
+  color: #333333;
+  text-align: center;
+  font-weight: 700;
+}
+.container-chil{
+  display: flex;
+  justify-content: space-around;
+}
+.info{
+  position: relative;
+  width: 100%;
+  margin-left: 70px; 
+  font-weight: 400;
+}
+.chil-p{
+  margin-left: -18px;
+}
+.text{
+  margin-left: 25px;
+}
+.button-btn {
+  display: flex;
+  align-items: center;
+}
+.submit-btn{
+  margin: auto;
+  font-size: 25px;
+  margin-bottom: 20px;
+}
+.container p,label{
+   font-size: 20px;
+   color: #333333;
+}
+.chil-input{
+  border-width: thin;
+    border-style: solid;
+    border-color: #333333;
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    background-color: inherit;
+    font-size: 20px;
+    width: 90%;
+    outline: none;
+}
+/* css note */
+.note {
+  margin-top: 100px;
+  max-width: 300px;
+  max-height: 300px;
+  margin: auto;
+  text-align: center;
+  border: 1px solid #444444;
+  padding: 10px 20px;
+}
+.note a{
+  font-size: 20px;
+  text-decoration: none;
+  margin: 0 20px;
+  border: 1px solid #444444;
+  padding: 3px 10px;
+  border-radius: 20px;
+}
+.success{
+  max-width: 1000px;
+  font-size: 35px;
+  text-align: center;
+  margin: auto;
+}
+/* css button */
+.wrapper{
+  margin-top: 50px;
+  margin-bottom: 20px;
+  transform: translate(150%, -50%);
+}
+
+.wrapper a{
+  display: block;
+  width: 200px;
+  height: 40px;
+  line-height: 40px;
+  font-size: 18px;
+  font-family: sans-serif;
+  text-decoration: none;
+  color: #333;
+  border: 2px solid #333;
+  letter-spacing: 2px;
+  text-align: center;
+  transition: all .35s;
+}
+
+.wrapper a span{
+  position: relative;
+  z-index: 2;
+}
+.img-title {
+  position: absolute;
+  max-width: 100px;
+  max-height: 100px;
+  margin-left: -50px;
+  margin-top: -1%;
+  z-index: -1;
+}
+.wrapper a:after{
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  background: #444444;
+  transition: all .35s;
+}
+
+.wrapper a:hover{
+  color: white;
+}
+
+.wrapper a:hover:after{
+  width: 100%;
+}
+
+
+/* footer css */
+.footerBackground {
+    color: #444444;
+  }
+  
+  .footerLink {
+    color: #ff9900;
+  }
+  .footer-a{
+      text-decoration: none;
+      color: #444444;
+  }
+  .footer {
+    display: flex;
+    background-color: #f4f4f4;
+    width: 100%;
+    height: auto;
+    padding-bottom: 100px;
+  }
+  
+  .span {
+    color: #ff9900;
+  }
+  
+  .footerCopyright {
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    margin-top: 51px;
+    margin-left: 86px;
+    flex-basis: 47.5%;
+  }
+  
+  .footerCopyright p {
+    margin: 0;
+  }
+  
+  .footerCopyrightLogo {
+    width: 161px;
+    height: 58px;
+  }
+  
+  .footerCopyrightSlogan {
+    padding-top: 20px;
+    font-size: 18px;
+    line-height: 26px;
+    width: 80%;
+  }
+  
+  .footerCopyrightID {
+    padding-top: 45px;
+    font-size: 17px;
+    line-height: 20.5px;
+  }
+  
+  .connectUs {
+    flex-basis: 28%;
+    margin-top: 51px;
+  }
+  
+  .connectUsLabel {
+    font-size: 21px;
+    line-height: 25.5px;
+    color: #ff9900;
+    margin: 0;
+  }
+  
+  .connectUsItems {
+    padding-top: 20px;
+  }
+  
+  .connectUsItems p {
+    margin: 0;
+    font-size: 18px;
+    line-height: 22px;
+    padding-bottom: 15px;
+  }
+  
+  .link {
+    margin-top: 51px;
+  }
+  
+  .linkLabel {
+    font-size: 21px;
+    line-height: 25.5px;
+    color: #ff9900;
+    margin: 0;
+  }
+  
+  .linkItems {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    font-size: 18px;
+    padding-top: 20px;
+  }
+  
+  .linkItems a {
+    padding-bottom: 15px;
+  }
+  
+  .footerBackgroundIcon {
+    display: flex;
+    position: relative;
+  }
+  
+  @media screen and (max-width: 1240px) {
+    .footerBackgroundIcon {
+      display: none;
+    }
+  }
+  
+  @media screen and (max-width: 1050px) {
+    .footer p {
+      font-size: 16px;
+    }
+    .footer a {
+      font-size: 16px;
+    }
+    .footer h1 {
+      font-size: 18px;
+    }
+  }
+  
+  @media screen and (max-width: 950px) {
+    .footer p {
+      font-size: 13px;
+    }
+    .footer a {
+      font-size: 13px;
+    }
+    .footerCopyright {
+      margin-left: 50px;
+      flex-basis: 40%;
+    }
+    .footerCopyrightSlogan {
+      width: 90%;
+    }
+  }
+  
+  @media screen and (max-width: 700px) {
+    .footer h1 {
+      font-size: 15px;
+    }
+    .footer p {
+      font-size: 14px;
+    }
+    .footer a {
+      font-size: 14px;
+    }
+    .footerCopyright {
+      margin-left: 30px;
+    }
+  }
+  
+  @media screen and (max-width: 550px) {
+    .footer {
+      flex-direction: column;
+    }
+    .footerCopyright {
+      align-items: center;
+      margin: 0;
+    }
+    .connectUs {
+      margin-left: auto;
+      margin-right: auto;
+      margin-top: 20px;
+    }
+    .link {
+      margin-left: auto;
+      margin-right: auto;
+      margin-top: 10px;
+    }
+    .footer h1 {
+      font-size: 21px;
+    }
+  }
+  @media screen and (max-width: 414px) {
+    .footer {
+      flex-direction: column;
+    }
+    .footerCopyright {
+      align-items: center;
+    }
+    .connectUs {
+      margin-left: 15px;
+      margin-top: 20px;
+    }
+    .link {
+      margin-left: 15px;
+      margin-top: 10px;
+    }
+    .footer h1 {
+      font-size: 21px;
+    }
+  }
+  
