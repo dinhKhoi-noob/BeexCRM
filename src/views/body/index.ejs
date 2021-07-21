@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>BeeXCRM</title>
+    <link rel="stylesheet" href="/css/index.css">
+  </head>
+  <body>
+    <%- include('../infoproduct/infoproduct.ejs')%>
+    <%- include('../note/success.ejs')%>
+    <script>
+      var remove = document.getElementById('customer')
+      var add = document.getElementById('infoproduct')
+      var notes = document.getElementById('notes')
+      var success = document.getElementById('success')
+      function process() {
+        add.classList.add('newstyle')
+        notes.classList.remove('newstyle')
+      }
+      function process1() {
+        notes.classList.add('newstyle')
+        success.classList.remove('newstyle')
+      }
+      function process2() {
+        notes.classList.add('newstyle')
+        add.classList.remove('newstyle')
+      }
+   </script>
+  </body>
+</html>
