@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "nodemon --inspect ./public/index.js",
+    "start": "nodemon --inspect ./src/public/index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "DK_HV",
