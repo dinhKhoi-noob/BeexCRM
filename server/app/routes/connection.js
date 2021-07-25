@@ -1,6 +1,4 @@
-const router = require("express").Router();
 const mysql = require("mysql2");
-let query;
 const mysqlHost = 'localhost';
 const mysqlPort = '3306';
 const mysqlUser = 'root';

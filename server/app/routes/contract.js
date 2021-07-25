@@ -1,4 +1,6 @@
-const connecction = require("./connection");
+const connection = require("./connection");
+const router = require("express").Router();
+const randomString = require("randomstring");
 
 router.get("/",(req,res)=>{
     query = `select * from contract`;
