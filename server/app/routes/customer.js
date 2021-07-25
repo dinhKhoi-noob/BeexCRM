@@ -1,22 +1,4 @@
-const router = require("express").Router();
-const mysql = require("mysql2");
-let query;
-const mysqlHost = 'localhost';
-const mysqlPort = '3306';
-const mysqlUser = 'root';
-const mysqlPass = '123';
-const mysqlDb = 'beexCRMDb';
-const randomString = require('randomstring');
-
-const connectionOptions = {
-    host: mysqlHost,
-    port: mysqlPort,
-    user: mysqlUser,
-    password: mysqlPass,
-    database: mysqlDb
-}
-
-const connection = mysql.createConnection(connectionOptions);
+const connection = require("./connection");
 
 router.get('/',(req, res)=>{
     query = "select * from customer";
@@ -41,7 +23,7 @@ router.get('/:id',(req, res)=>{
         if(error)
         {
             console.log(error);
-            res.status(400).json({success:false,message:"Something went wrong"});
+            res.status(500).json({success:false,message:"Something went wrong",error});
         }
         if(result)
         {
@@ -68,7 +50,7 @@ router.post('/',(req,res)=>{
         }
         if(result)
         {
-            res.json({success:true,message:"Successfully"});
+            res.json({success:true,message:"Successfully",data:result});
         }
     })
 })

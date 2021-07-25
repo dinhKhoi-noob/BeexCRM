@@ -1,22 +1,4 @@
-const router = require("express").Router();
-const mysql = require("mysql2");
-let query;
-const mysqlHost = 'localhost';
-const mysqlPort = '3306';
-const mysqlUser = 'root';
-const mysqlPass = '123';
-const mysqlDb = 'beexCRMDb';
-const randomString = require('randomstring');
-
-const connectionOptions = {
-    host: mysqlHost,
-    port: mysqlPort,
-    user: mysqlUser,
-    password: mysqlPass,
-    database: mysqlDb
-}
-
-const connection = mysql.createConnection(connectionOptions);
+const connection = require("./connection");
 
 router.get('/',(req, res)=>{
     query = "select * from product";
@@ -42,25 +24,19 @@ router.get('/:id',(req, res)=>{
         {
             console.log(error);
             res.status(400).json({success:false,message:"Something went wrong"});
+            return;
         }
-        if(result)
+        if(result.length>0)
         {
-            if(result.length>0)
-            {
-                res.json({success:true,message:"Successfully",data:result});
-            }
-            else
-            {
-                res.status(404).json({success:false,message:"Not Found"});
-            }
+            res.json({success:true,message:"Successfully",data:result});
+        }
+        else
+        {
+            res.status(404).json({success:false,message:"Not Found"});
         }
     })
 })
-// id
-// name
-// description
-// priority
-//complexity 
+
 router.post('/',(req,res)=>{
     const {desc,name,priority,complexity} = req.body;
     const id = randomString.generate(10);
